@@ -22,7 +22,8 @@
         GET solicita dados. quando envio, os dados são exibidos na url do navegador
         POST envia dados e não exibe na url
     -->
-     <form action="contato.php" method="post">
+     <form action="contato.php" method="post" autocomplete="off">
+
         <label for="nomeCompleto">Nome Completo</label>
         <input type="text" name="nomeCompleto" id="nomeCompleto">
 
@@ -67,6 +68,44 @@
         <!-- input para selecionar cor -->
         <input type="color" name="cores">
         <br>
+
+        <!-- textarea, campo para texto, permite quebra de linha -->
+        <textarea name="texto" cols="30" rows="10" placeholder="digite o texto"></textarea>
+        <br>
+
+        <!-- data list, lista de dados -->
+        <input type="text" name="ListaDados" list="lista">
+        <datalist id="lista">
+            <option value="item1">item 1</option>
+            <option value="item2">item 2</option>
+            <option value="item3">item 3</option>
+        </datalist>
+
+        <!-- checkbox lista de dados onde pode marcar vários itens-->
+        <input type="checkbox" name="cores[]" id="vermelho" value="Vermelho"> <label for="vermelho">Vermelho</label>
+
+        <input type="checkbox" name="cores[]" id="amarelo" value="Amarelo">
+        <label for="amarelo">Amarelo</label>
+        <br>
+
+        <!-- RadioBox, permite a marcação de apenas um item da lista, desde que o name deles sejam iguais -->
+        <input type="radio" name="liquido" value="agua">
+        <label for="agua">Agua</label>
+        <input type="radio" name="liquido" value="cerveja">
+        <label for="cerveja">Cerveja</label>
+        <input type="radio" name="liquido" value="suco">
+        <label for="suco">Suco</label>
+        <br>
+
+        <!-- 
+            VALUE preenche um valor padrão
+            REQUIRED marca o campo como obrigatório
+            READONLY apenas leitura, campo enviado
+            DISABLE desabilita o campo, o campo não é enviado no formulário
+         -->
+        <label for="">Campo com valor fixo</label>
+        <br>
+        <input type="text" name="test1" value="valor fixo" readonly>
         
         <!-- campo submit -->
         <input type="submit" value="Enviar">
