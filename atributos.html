@@ -6,11 +6,59 @@
     <title>Atributos do HTML</title>
 </head>
 <body>
+    <!-- classes não devem começar com numerais
+    posso ter mais de uma classe em cada elemento -->
     <div class="bannerPaginaInicial"></div>
     <div class="banner-container"></div>
     <div class="banner_home"></div>
     <div class="banner"></div>
     <!-- Não pode utilizar espaço, pois assim estará criando outra classe -->
     <div class="bruno marcos"></div>
+
+    <!-- 
+        ID deve ser único
+        não posso começar com numerais no nome dele
+        não posso ter espaço no nome do id
+     -->
+
+     <a href="#" id="link1"></a>
+     <a href="#" id="link1"></a>
+
+    <ul class="list-group">
+        <li class="list-item" rel="1">Diego</li>
+        <li class="list-item" rel="2">Jonas</li>
+        <li class="list-item" rel="3">Maria</li>
+        <li class="list-item" rel="4">Bruno</li>
+    </ul>
+    <!-- rel é um atributo de relação, relacionando uma coisa com outra -->
+    <ul>
+        <li rel="SC">Santa Catarina</li>
+        <li rel="PR">Paraná</li>
+        <li rel="RS">Rio Grande do Sul</li>
+    </ul>
+
+    <ul>
+        <li rel="frutas">Banana</li>
+        <li rel="frutas">Laranja</li>
+        <li rel="frutas">Tanjerina</li>
+        <li rel="frutas">Maça</li>
+        <li rel="bebidas">Refrigerante</li>]
+        <li rel="frutas verduras">Tomate</li>
+    </ul>
+
+    <ul>
+        <li rel="crime, drama">Breaking Bad</li>
+        <li rel="superHerois">Smallville</li>
+        <li rel="superHerois">Flash</li>
+        <li rel="superherois">Arrow</li>
+    </ul>
+
+    <!-- atributos livres -->
+    <ul>
+        <li data-cpf="12804085961" data-tipo="PF">Bruno</li>
+        <li data-cpf="00000000000">Heloisa</li>
+        <li data-cpf="00000000000">Betovem</li>
+    </ul>
+     
 </body>
 </html>

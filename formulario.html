@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- 
+        CRUD
+        Create
+        Ready
+        Update
+        Delete
+     -->
+
+     <!-- 
+        o atributo ACTION = é o caminho para onde vai a requisição e envio dos dados preenchidos
+
+        method diz o modo de envio das informações pelo navegador
+
+        GET solicita dados. quando envio, os dados são exibidos na url do navegador
+        POST envia dados e não exibe na url
+    -->
+     <form action="contato.php" method="post">
+        <label for="nomeCompleto">Nome Completo</label>
+        <input type="text" name="nomeCompleto" id="nomeCompleto">
+
+        <br>
+        <!-- input para email -->
+        <input type="email" name="email" placeholder="E-mail">
+        <br>
+
+        <!-- input para número -->
+        <input type="number" name="numero" placeholder="Número">
+        <br>
+
+        <!-- input para senha -->
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        <br>
+
+        <!-- input para arquivo -->
+        <input type="file" name="arquivo">
+        <br>
+
+        <!-- input para arquivos -->
+        <input type="file" name="arquivos" multiple>
+        <br>
+
+        <!-- select para lista -->
+        <select name="estados" required>
+            <option value="">Selecione</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PR">Paraná</option>
+        <select>
+        <br>
+
+        <!-- campo oculto -->
+        <input type="hidden" name="id" value="1234">
+        <br>
+
+        <!-- input para enviar imagens -->
+        <!-- <input type="image" src="ovelha.png" alt="">
+        <br> -->
+
+        <!-- input para selecionar cor -->
+        <input type="color" name="cores">
+        <br>
+        
+        <!-- campo submit -->
+        <input type="submit" value="Enviar">
+
+        <button type="submit">Envio com button</button>
+
+     </form>
+</body>
+</html>
