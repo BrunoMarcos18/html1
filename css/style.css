@@ -1,0 +1,31 @@
+/* 
+SELETORES
+SELETORES DE TAG -> DIV, SPAN, P
+SELETOR DE CLASSE -> .nomeClasse
+SELETOR DE ID -> #nomeId
+SELETORES DE EVENTOS -> seletorPrincipal:hover
+SELETORES DE ATRIBUTOS -> div[rel] div[div="1"] rel="100" 
+
+UNIDADES DE MEDIDA DO CSS
+PIXEL -> PX
+PORCENTAGEM -> %
+PROPORCIONAL DE CONTAINER -> EM
+PROPORCIONAL DE TELA -> REM
+REFERENCIAL DE VIEWPORT -> VW OU VH 
+VW VIEWPORT WIDTH
+VH VIEWPORT HEIGHT
+*/
+*{
+    margin:0;
+    padding: 0;
+}
+div.bloco{
+    width: 20vw;
+    height: 20vw;
+    background-color: blueviolet;
+    margin: 10px 10px 10px 10px;
+    /*      T    R    B    L */
+}
+div h1{
+    color: burlywood;
+} 
