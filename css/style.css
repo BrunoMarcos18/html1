@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
 /* 
 SELETORES
 SELETORES DE TAG -> DIV, SPAN, P
@@ -19,13 +22,79 @@ VH VIEWPORT HEIGHT
     margin:0;
     padding: 0;
 }
+
+body{
+    background: url("https://imgnike-a.akamaihd.net/branding/cdp-corinthians-20.09-v2/assets/img/carrossel-camisas/camisa-2-c.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blueviolet;
+    background-blend-mode: luminosity;
+
+
+    /*background-color: rgb(64, 42, 16);*/
+    /*
+    tipos de cores
+
+    hexadecimal -> #000000
+    00 -> Red | 00 -> Green | 00 -> Blue
+    
+    Nome das Cores (black, white, red, yellow, green)
+
+    RGB
+    rgb(R,G,B) vai de 0 até 255
+
+    RGBA
+    rgba(R, G, B, A) vai de 0 até 0,234
+    */
+}
+
 div.bloco{
-    width: 20vw;
+    width: 25vw;
     height: 20vw;
     background-color: blueviolet;
     margin: 10px 10px 10px 10px;
     /*      T    R    B    L */
+    margin: 10px;
+    /* aplica em todos os lados */
+    margin: 10px 30px;
+    /*      T B   L R  */
+
+    padding: 20px; /*Mesma regra de quatro lados*/
+    /* 
+    padding: 10px;
+    padding: 5px 10px 15px 20px
+    padding: 10px 25px
+    */
+
+    border: 4px groove transparent;
+    /* 
+    border: expessura tipo cor
+    tipos de bordas:
+    none -> não setada
+    hidden -> oculta, semelhante a none
+    dotted -> borda pontilhada
+    dashed -> borda tracejada 
+    solid -> linha continua
+    double -> borda dupla
+    groove -> borda entalhada
+    ridge -> borda com ressalto
+    */
+
+}
+div:hover{
+    border: 4px ridge black;
 }
 div h1{
     color: burlywood;
 } 
+.bloco p{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Bungee Spice', cursive;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px #000000;
+    
+}
