@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.cambio{
+    width: 100vw;
+    background-color: black;
+    border-spacing: 2px;
+    filter: invert(53);
+}
+.cambio th{   
+    background-color: #ccc;
+    padding: 4px;
+    border-radius: 50px;
+}
+.cambio td{
+    padding: 4px;
+    text-align: center;
+    font-family: 'Bungee Spice', cursive;
+    border:1px solid transparent;
+    background-color: white;
+}
+/* regra do corsim cornão (tabela zebrada) */
+.cambio tr:nth-child(odd) td{
+    background-color: bisque;
+}
+.cambio td:first-of-type{
+    text-align: left;
+}
+/*.cambio td.left{
+    text-align: left;
+}*/
