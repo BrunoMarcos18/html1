@@ -1,0 +1,30 @@
+.container{
+    background-color: red;
+    padding: 15px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    'header header hearder'
+    'sidebar content content'
+    'rodape rodape rodape';
+}
+.container .grid-item{
+    background-color: gray;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.header{
+    grid-area: header;
+    width: 155%;
+    height: 90%;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.content{
+    grid-area: content;
+}
+.rodape{
+    grid-area: rodape;
+}
