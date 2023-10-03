@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+    gap: 5%;
+}
+.conteudo{
+    height: 500px;
+}
+
+.navegacao{
+    width: 95vw;
+    height: 101px;
+    background-color: #ffcdff;
+    padding: 0 40px;
+}
+.navegacao img{
+    float: left;
+}
+.navegacao ul{
+    width: 75%;
+    text-align: center;
+    float: right;
+}
+.navegacao ul li{
+    display: inline-block;
+}
+.navegacao ul li a{
+    display: block;
+    padding: 40px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-out;
+}
+.navegacao ul li a:hover{
+    background-color: #dda48a;
+    transition: 0.2s ease-in;
+}
+
+/* DESTAQUES */
+#destaques article header h3{
+    display: inline-block;
+    background-color: black;
+    padding: 4px 8px;
+    color: white;
+    vertical-align: top;
+}
+#destaques article div.content{
+    min-height: 20%;
+    background-color: white;
+    box-shadow: 0px 3px 5px 1px #000000;
+    text-align: center;
+}
+#destaques article div.title{
+    min-height: 100px;
+}
+#destaques article div.action{
+    height: 40px;
+}
+#destaques article img{
+    width: 100%;
+}
+#destaques article h4{
+    padding: 3px 8px;
+    text-align: left;
+}
+
+.rodape{
+    height: 150px;
+    width: 100%;
+    background-color: #ffcdff;
+    padding: 15px 0;
+}
+.containerFooter{
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.row{
+    display: grid;
+    grid-template-columns: 33% 33% 33% 33%;
+}
+
+.center-align{
+    text-align: center;
+}
+.right-align{
+    text-align: right;
+}
